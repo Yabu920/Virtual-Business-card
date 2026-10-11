@@ -1,0 +1,70 @@
+{
+  "name": "Yeabsra Abera",
+  "firstName": "Yeabsra",
+  "lastName": "Abera",
+  "initials": "YA",
+  "title": "Software Developer",
+  "company": "Bluecode Technology Solution",
+  "bio": "I build modern, reliable digital solutions. As founder of Bluecode Technology Solution, I help businesses turn their ideas into a strong digital presence.",
+  "email": "Yeab920@gmail.com",
+  "phones": ["+251912464134", "+251967248487"],
+  "whatsapp": "251912464134",
+  "website": "https://bluecodes.com.et",
+  "location": "Addis Ababa, Ayat, Ethiopia",
+  "address": {
+    "street": "Ayat",
+    "city": "Addis Ababa",
+    "country": "Ethiopia"
+  },
+  "maps": "https://www.google.com/maps/search/?api=1&query=Ayat%2C%20Addis%20Ababa%2C%20Ethiopia",
+  "socials": [
+    {
+      "id": "website",
+      "label": "Website",
+      "detail": "bluecodes.com.et",
+      "url": "https://bluecodes.com.et"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "detail": "Let’s connect",
+      "url": "https://www.linkedin.com/in/yeabsra-abera-302ba52b3"
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "detail": "Explore my code",
+      "url": "https://github.com/Yabu920"
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "detail": "@y_a_b_u_n_a",
+      "url": "https://www.instagram.com/y_a_b_u_n_a"
+    },
+    {
+      "id": "telegram",
+      "label": "Telegram",
+      "detail": "@Yeab985",
+      "url": "https://t.me/Yeab985"
+    }
+  ],
+  "projects": [
+    {
+      "id": "coffee",
+      "name": "Konjo Buna",
+      "category": "COFFEE & CULTURE",
+      "description": "Modern digital presence for an Ethiopian coffee brand.",
+      "url": "https://konjobuna.com",
+      "domain": "konjobuna.com"
+    },
+    {
+      "id": "garment",
+      "name": "Omega Garment",
+      "category": "SPORTSWEAR & APPAREL",
+      "description": "Responsive corporate website for a sportswear and garment company.",
+      "url": "https://omegagarment.com.et",
+      "domain": "omegagarment.com.et"
+    }
+  ]
+}

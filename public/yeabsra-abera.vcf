@@ -1,0 +1,17 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Abera;Yeabsra;;;
+FN:Yeabsra Abera
+ORG:Bluecode Technology Solution
+TITLE:Software Developer
+TEL;TYPE=CELL,PREF:+251912464134
+TEL;TYPE=CELL:+251967248487
+EMAIL;TYPE=INTERNET:Yeab920@gmail.com
+URL:https://bluecodes.com.et
+ADR;TYPE=WORK:;;Ayat;Addis Ababa;;;Ethiopia
+LABEL;TYPE=WORK:Addis Ababa\, Ayat\, Ethiopia
+item1.URL:https://www.linkedin.com/in/yeabsra-abera-302ba52b3
+item1.X-ABLabel:LinkedIn
+item2.URL:https://github.com/Yabu920
+item2.X-ABLabel:GitHub
+END:VCARD
