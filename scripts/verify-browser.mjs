@@ -103,12 +103,12 @@ try {
   const downloadPromise = page.waitForEvent("download");
   await page.getByRole("link", { name: /Save Contact/ }).click();
   const download = await downloadPromise;
-  assert.equal(download.suggestedFilename(), "yeabsra.jpg");
+  assert.equal(download.suggestedFilename(), "yeabsra-abera.vcf");
   const downloaded = await readFile(await download.path(), "utf8");
   assert.equal(
     downloaded,
     await readFile(
-      new URL("../public/yeabsra.jpg", import.meta.url),
+      new URL("../public/yeabsra-abera.vcf", import.meta.url),
       "utf8",
     ),
   );
@@ -154,7 +154,7 @@ try {
     }),
   );
   await page.getByRole("button", { name: "Share Profile" }).click();
-  assert.equal(await page.getByRole("status").innerText(), "");
+  assert.equal(await page.locator(".share-message").innerText(), "");
   results.push("Share cancellation is quiet");
   await page.evaluate(() => {
     Object.defineProperty(navigator, "share", {
@@ -222,12 +222,18 @@ try {
     "0s",
   );
   results.push("Reduced-motion preference");
+  const avatarImage = page.locator(".avatar img");
   assert.equal(
-    await page.getByRole("img", { name: "Yeabsra Abera initials" }).count(),
-    1,
+    new URL(await avatarImage.getAttribute("src"), baseURL).pathname,
+    "/yeabsra.jpg",
+  );
+  assert.equal(await avatarImage.getAttribute("alt"), "Yeabsra Abera");
+  assert.ok(
+    await avatarImage.evaluate((image) => image.complete && image.naturalWidth > 0),
+    "Profile image should load successfully",
   );
   assert.deepEqual(errors, []);
-  results.push("Initials fallback; no browser console or runtime errors");
+  results.push("Yeabsra profile image loads; no browser console or runtime errors");
   await writeFile(
     "test-results/browser-results.json",
     JSON.stringify(results, null, 2),

@@ -38,7 +38,7 @@ test("vCard folds UTF-8 at 75 bytes without damaging content", () => {
 test("public vCard is synchronized with the profile", () => {
   assert.equal(
     readFileSync(
-      new URL("../public/yeabsra.jpg", import.meta.url),
+      new URL("../public/yeabsra-abera.vcf", import.meta.url),
       "utf8",
     ),
     createVCard(p),

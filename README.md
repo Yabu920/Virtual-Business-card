@@ -42,7 +42,7 @@ Project artwork is decorative typography and iconography, not a screenshot or of
 
 ## Real profile photo
 
-Place your photo at **`public/profile.jpg`**, then redeploy. No code changes are required. The circular YA initials are the fallback when the image is missing or fails to load; no fake portrait is included. Use a square JPG around 400×400 pixels, ideally below 150 KB. The photo uses Next.js Image without server optimization, keeping this small local asset portable.
+The profile photo is **`public/yeabsra.jpg`**. Replace that file with your preferred portrait, then redeploy. The circular YA initials are the fallback when the image is missing or fails to load; no fake portrait is included. Use a square JPG around 400×400 pixels, ideally below 150 KB. The photo uses Next.js Image without server optimization, keeping this small local asset portable.
 
 ## Contact file
 
@@ -104,7 +104,8 @@ If origin is already configured, skip the remote-add command. Use `--private` in
 - `components/`: contact actions, avatar, social links, projects, sharing, QR.
 - `data/profile.json`: profile and links.
 - `scripts/`: reproducible vCard generation.
-- `public/yeabsra.jpg`: downloadable contact.
+- `public/yeabsra.jpg`: profile photo.
+- `public/yeabsra-abera.vcf`: downloadable contact, generated from `data/profile.json`.
 - `tests/`: vCard format, escaping, folding, synchronization, destination validation.
 
 ## Optional browser regression checks

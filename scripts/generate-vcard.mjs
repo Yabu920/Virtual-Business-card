@@ -5,7 +5,7 @@ const profile = JSON.parse(
 );
 await mkdir(new URL("../public/", import.meta.url), { recursive: true });
 await writeFile(
-  new URL("../public/yeabsra.jpg", import.meta.url),
+  new URL("../public/yeabsra-abera.vcf", import.meta.url),
   createVCard(profile),
 );
-console.log("Generated public/yeabsra.jpg from data/profile.json");
+console.log("Generated public/yeabsra-abera.vcf from data/profile.json");

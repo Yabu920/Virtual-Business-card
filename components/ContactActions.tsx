@@ -5,8 +5,8 @@ export function ContactActions() {
     <div className="contact-actions">
       <a
         className="save-contact"
-        href="/yeabsra.jpg"
-        download="yeabsra.jpg"
+        href="/yeabsra-abera.vcf"
+        download="yeabsra-abera.vcf"
       >
         <ArrowDownToLine size={19} strokeWidth={1.8} />
         <span>Save Contact</span>
